@@ -45,7 +45,7 @@ abstract class _HomeControllerBase with Store {
 
     try {
       response = await dio.post(
-        "/repository/serverConsultaPreco/?path=produtos",
+        "/repository/consultaPrecoServer/?path=produtos",
         data: {"id": "1", "nome": "wendu", "quantidade": "516"},
         onSendProgress: (int sent, int total) {
           // print(response.data.toString());

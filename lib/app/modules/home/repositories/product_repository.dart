@@ -32,7 +32,7 @@ class ProductRepository {
     // }
 
     var response =
-        await dio.get('/repository/serverConsultaPreco?path=produtos');
+        await dio.get('/repository/consultaPrecoServer?path=produtos');
     List<ProductModel> list = [];
 
     for (var json in (response.data)) {
